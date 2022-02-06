@@ -8,6 +8,7 @@
     "esbuild:": "esbuild",
     "build": "esbuild ./src/app.jsx --bundle --outfile=out/out.js ",
     "build:ts": "esbuild ./src/app.ts --bundle --outfile=out/out.ts.js",
+    "build:react": "esbuild ./src/react/app.jsx --inject:./src/react/react-shim.js --outfile=out/react/app.js",
     "build:browser": "esbuild ./src/app.jsx --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16"
   },
   "keywords": [],
